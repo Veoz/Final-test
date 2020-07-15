@@ -1,0 +1,29 @@
+@mixin title($color){
+  color: $color;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 29.91px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+}
+@mixin title-underscore($color, $right, $bottom, $opa){
+  &:after{
+  content:'';
+  position: absolute;
+  width: 87px;
+  height: 4px;
+  background-color: $color;
+  opacity: $opa;
+  bottom: $bottom;
+  right:$right;
+}
+}
+@mixin second-title($color){
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  color: $color;
+}

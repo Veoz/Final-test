@@ -1,0 +1,707 @@
+@import "var";
+@import "mixin";
+
+
+//------------------------START MAIN CSS RULES------
+div.container{
+  max-width: 1140px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  font-family: "Titillium Web";
+}
+//------------------------START MAIN CSS RULES------
+
+//------------------------START HEADER--------------
+header.main{
+  padding-top: 50px;
+  background:$h-bg;
+  div.container{
+    padding: 0 40px;
+    div.row.nav{
+      display: flex;
+      justify-content: space-between;
+      div.logo{
+        padding-left: 37px;
+      }
+      div.nav.col-6{
+        padding-right: 3px;
+        display: flex;
+        justify-content: flex-end;
+        nav.head{
+          ul{
+            margin-top: 5px;
+            display:flex;
+            justify-content: space-around;
+            li{
+              display: flex;
+              justify-content: space-around;
+              list-style: none;
+              margin: 0 11px 10px 0;
+              &:last-child{
+                margin-right: 0;
+              }
+              a{
+                color: $h-nav-color;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 16px;
+                padding: 4px 17px ;
+                border-radius: 5px;
+                text-decoration: none;
+                line-height: 18px;
+                &:hover{
+                  background: $h-nav-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    div.row.title{
+      div.col-10{
+        margin: auto;
+        padding: 0;
+        div.title{
+          margin: 115px 0 0;
+          display: flex;
+          h1{
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 48.82px;
+            color: $h-title-color;
+          }
+        }
+      }
+    }
+    div.row.button{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      div.col-5{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 144px;
+        a{
+          text-decoration: none;
+          color:$h-button-color;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26.19px;
+          text-transform: uppercase;
+          letter-spacing: 0.27px;
+          padding: 20px 82px;
+          background: $h-button-bg;
+          border-bottom: 4px solid $h-button-border-bg;
+          border-radius: 5px;
+
+
+        }
+      }
+    }
+  }
+}
+//------------------------END HEADER----------------
+
+//------------------------START SERVICES------------
+section.services{
+background: $s-bg;
+  padding-bottom: 120px;
+  div.container{
+    div.row.services-title{
+      display: flex;
+      justify-content: center;
+      padding-top: 118px;
+      h1{
+        @include title($s-title-color);
+          @include title-underscore(
+                $s-title-underscore-color,
+                41%,
+                -24px,
+                0.15
+          );
+      }
+    }
+    div.row.services-description{
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      p{
+        @include second-title($s-title-color);
+        width: 603px;
+        height: 45px;
+        text-align: center;
+      }
+    }
+    div.row.services-items{
+      margin-top: 75px;
+      div.col-3.item{
+        padding: 0 40px;
+        min-height: 300px;
+        min-width: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        div.img{
+         display: flex;
+          justify-content: center;
+          img{
+            margin-bottom: 50px;
+          }
+        }
+        div.text{
+          h1{
+            margin:auto;
+            text-align: center;
+            color: $s-title-color;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.48px;
+
+
+          }
+
+          p{
+            margin-top: 20px;
+            width: 197px;
+            height: 64px;
+            text-align: center;
+            color: $h-title-color;
+          }
+        }
+      }
+    }
+  }
+}
+//------------------------END SERVICES--------------
+
+//------------------------START TEAM----------------
+section.team{
+  background:$t-bg;
+  padding-bottom: 125px;
+  div.container{
+    padding: 0 30px;
+    div.row.team-title{
+      padding-top: 120px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      h2{
+        @include title($t-main-color);
+        @include title-underscore(
+                        $t-underscore-bg,
+                        42.5%,
+                        -25px,
+                        0.85
+        );
+      }
+    }
+    div.row.description{
+      margin-top: 38px;
+      display: flex;
+      justify-content: center;
+      p{
+        @include second-title($t-main-color);
+      }
+    }
+    div.row.team-items{
+        display: flex;
+      justify-content: space-around;
+      div.col-3.item{
+        margin: 60px 0 0 0px ;
+        padding: 0;
+        width: 200px;
+        height: 490px;
+
+
+        div.img{
+          display: flex;
+          justify-content: center;
+          img{
+            border-radius: 50%;
+
+          }
+        }
+        div.row.item-title{
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+          h2{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.48px;
+            color: $t-item-title-color;
+          }
+
+        }
+        div.row.item-second-title {
+          display: flex;
+          justify-content: center;
+          a{
+
+          }
+        }
+        div.row.item-description{
+          display: flex;
+          justify-content: center;
+          p{
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+            width: 200px;
+            text-align: center;
+            color: $t-item-desc-color;
+          }
+        }
+        div.row.social-link{
+          margin: 10px 0 0;
+          display: flex;
+          justify-content: center;
+          a{
+            margin: 0 5px 0;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+
+            background-color: $t-item-social-bg;
+            border-radius: 50%;
+            i{
+              padding-top: 7px;
+              font-size: 18px;
+              color: $i-item-social-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//------------------------END TEAM------------------
+
+//------------------------START SKILL---------------
+section.skill{
+  padding-bottom: 118px;
+  div.container{
+    div.row.skill-title{
+      display: flex;
+      justify-content: center;
+      margin-top: 118px;
+      h2{
+        @include title($skill-title-color);
+        @include title-underscore(
+        $skill-underscore-bg,
+        37%,
+        -23px,
+        0.75
+        );
+      }
+    }
+    div.row.skill-second-title{
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p{
+        @include second-title($skill-title-color);
+        margin-bottom: 0;
+      }
+    }
+    div.row.count{
+      display: flex;
+      justify-content: space-between;
+        div.col-3.item{
+          margin: 80px 0 0;
+          width: 182px;
+          height: 210px;
+          padding: 0;
+          div.img{
+            display: flex;
+            justify-content: center;
+          }
+          div.skill-name{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            width: 100%;
+            height: 18px;
+            p{
+              text-align: center;
+              color: $skill-title-color;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 18px;
+              text-transform: uppercase;
+              letter-spacing: 0.48px;
+            }
+          }
+        }
+
+    }
+  }
+}
+//------------------------END SKILL-----------------
+
+//------------------------START PORTFOLIO-----------
+section.portfolio{
+  background:$port-bg ;
+  padding: 5px 0 108px;
+  div.container{
+    div.row.port-title{
+      margin-top: 119px;
+      display: flex;
+      justify-content: center;
+      h2{
+        @include title($port-color);
+        @include title-underscore(
+        $port-underscore,
+        37%,
+        -25px,
+        1
+        );
+      }
+    }
+    div.port-second-title{
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p{
+        margin: 0;
+        @include second-title($port-color);
+      }
+    }
+    div.row.portfolio-button{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      button{
+        margin: 0 7px 0;
+        border: 0;
+        width: 84px;
+        height: 38px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.5px;
+        letter-spacing: 0.36px;
+        border-radius: 4px;
+      }
+    }
+    div.row.port-items{
+      margin-top: 20px;
+      div.col-6.item{
+        box-sizing: border-box;
+        padding: 0 9px;
+        margin: 45px  0 0;
+        div.img{
+          align-items: center;
+          margin-bottom: 30px;
+        }
+        div.title{
+          p{
+            @include second-title($port-color);
+            line-height: 19.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.36px;
+          }
+        }
+      }
+    }
+    div.row.port-link{
+      display: flex;
+      justify-content: center;
+      margin-top: 63px;
+      div.link{
+        width: 293px;
+        height: 70px;
+        background:$port-link-bg;
+        display: flex;
+        justify-content: center;
+        border-bottom: 4px solid $port-link-color-bord;
+        border-radius: 5px;
+        a{
+          margin: auto;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26.19px;
+          text-transform: uppercase;
+          letter-spacing: 0.27px;
+          color: $port-link-color;
+
+        }
+      }
+    }
+  }
+}
+//------------------------END PORTFOLIO-------------
+
+//------------------------START ABOUT---------------
+section.about{
+  background: $about-bg;
+  padding: 50px 0 130px;
+  div.container{
+    div.row.about-title{
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+      h2{
+        @include title($about-title-color);
+        @include title-underscore(
+                        $about-underscore,
+                        43%,
+                        -25px,
+                        1
+        );
+      }
+    }
+    div.row.about-second-title{
+
+      display: flex;
+      justify-content: center;
+      margin: 34px 0 0;
+      p{
+        @include second-title($about-title-color);
+      }
+    }
+    div.row.comments{
+      margin-top: -90px;
+      display: flex;
+      justify-content: space-between;
+
+      div.col-6.item{
+        margin: 140px 0 0;
+        display: flex;
+        width: 470px;
+        height: 170px;
+        padding: 0;
+        &:nth-child(2n+2){
+         padding-left: 35px;
+        }
+        div.img{
+          margin-right: 40px;
+          img{
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+
+          }
+        }
+        div.text{
+          p{
+            font-size: 21px;
+            line-height: 31.2px;
+            letter-spacing: 0.35px;
+            font-style: italic;
+            color: $about-title-color;
+          }
+          h3{
+            margin-bottom: 0;
+            box-sizing: border-box;
+            padding: 10px 14px  0 ;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 0.48px;
+            color: $about-title-color;
+          }
+          h4{
+            margin-top: 0;
+            box-sizing: border-box;
+            padding: 0 14px  0 ;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.36px;
+            color: $about-commentator;
+          }
+        }
+      }
+    }
+  }
+}
+//------------------------END ABOUT-----------------
+
+//------------------------START FOOTER--------------
+footer.touch{
+  padding: 50px 0 45px;
+  background:$footer-bg;
+  div.container{
+    div.row.touch-title{
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+      h2{
+        @include title($about-title-color);
+        @include title-underscore(
+                        $footer-underscore,
+                        35%,
+                        -25px,
+                        1
+        );
+      }
+    }
+    div.row.touch-second-title{
+      display: flex;
+      justify-content: center;
+      margin: 35px 0 0;
+      p{
+        @include second-title($about-title-color);
+      }
+    }
+    form{
+      padding-bottom: 115px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      div.row{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+        div.input{
+          margin: 60px 0 20px;
+        width: 860px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+          .place_holder {
+            z-index: 100;
+            left: 25px;
+            cursor: text;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: inline;
+            color: $footer-form-color;
+          }
+          .placeinput input:focus + .place_holder,
+          .placeinput input:valid + .place_holder {
+            display: none;
+          }
+          .placeinput {
+            position: relative;
+            overflow: hidden;
+          }
+          .place_holder span {
+            color: $footer-form-star;
+          }
+          div.place_holder{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+
+          }
+        input{
+          background: $footer-form-bg;
+
+          width: 414px;
+          height: 56px;
+          border: none;
+          border-radius: 5px;
+          padding: 20px;
+          position: relative;
+          outline: none;
+          color: $footer-form-color;
+
+        }
+      }
+      }
+      div.row.textarea{
+        .place_holder {
+          z-index: 100;
+          left: 25px;
+          cursor: text;
+          position: absolute;
+          top: 20px;
+          width: 100%;
+          display: inline;
+          color: $footer-form-color;
+        }
+        .placeinput textarea:focus + .place_holder,
+        .placeinput textarea:valid + .place_holder{
+          display: none;
+        }
+        .placeinput {
+          position: relative;
+          overflow: hidden;
+        }
+        .place_holder span {
+          color: $footer-form-star;
+        }
+        div.place_holder{
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 18px;
+
+        }
+        textarea{
+          &::-webkit-resizer {
+            display: block;
+            background: url("/img/resize.png");
+            background-size: cover;
+            width: 10px;
+            height: 10px;
+
+          }
+          color: $footer-form-color;
+          outline: none;
+          padding: 20px;
+          resize: both;
+          width: 860px;
+          height: 200px;
+          background: $footer-form-bg;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      div.row.submit{
+        input{
+          margin-top: 44px;
+          width: 293px;
+          height: 70px;
+          background-color: $footer-form-submit-bg;
+          border: 0;
+          border-bottom: 4px solid $footer-form-submit-bg-d-bord;
+          border-radius: 6px;
+          text-transform: uppercase;
+          color:$footer-form-color;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+    }
+    div.row.footer-social{
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      div.item{
+      margin: 0 30px;
+        a{
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 29.91px;
+          color:$footer-social-color;
+          transition:0.2s;
+          &:hover{
+            color:$footer-social-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+//------------------------END FOOTER----------------
+
+@import "responsive";
