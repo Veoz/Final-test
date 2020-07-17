@@ -13,7 +13,7 @@ gulp.task('serve', function () {
         }
     });
     gulp.watch("app/*.html").on("change", reloadd);
-    gulp.watch("app/css/*.css").on("change", reloadd);
+    gulp.watch("app/scss/*.scss").on("change", reloadd);
 });
 
 
@@ -34,5 +34,5 @@ gulp.task('css-libs', function() {
 });
 
 
-gulp.watch('scss/*.scss', gulp.parallel('scss'));
+gulp.watch('app/scss/*.scss', gulp.parallel('scss'));
 gulp.task('default', gulp.parallel('scss', 'serve', 'css-libs'));

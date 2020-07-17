@@ -533,7 +533,7 @@ section.about{
 
 //------------------------START FOOTER--------------
 footer.touch{
-  padding: 50px 0 45px;
+  padding: 50px 0 0;
   background:$blue;
   div.container{
     div.row.touch-title{
@@ -675,33 +675,42 @@ footer.touch{
           border-radius: 6px;
           text-transform: uppercase;
           color:$white;
-          font-size: 20px;
-          font-weight: 700;
+          font-size: 18px;
+          font-weight: 600;
         }
       }
 
     }
-    div.row.footer-social{
-      margin-top: 40px;
+
+  }
+
+  div.row.footer-social{
+    box-sizing: content-box;
+    padding: 40px 80px 45px;
+    background-color: #344b8e;
+    margin:0;
+
+    div.container{
       display: flex;
       justify-content: center;
       div.item{
       margin: 0 30px;
-        a{
-          text-decoration: none;
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 29.91px;
+      a{
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.91px;
+        color:$white;
+        transition:0.2s;
+        &:hover{
           color:$social-hover;
-          transition:0.2s;
-          &:hover{
-            color:$white;
-          }
         }
       }
-    }
+    }}
+
   }
 }
+
 //------------------------END FOOTER----------------
 
 @import "responsive";
