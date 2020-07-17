@@ -14,7 +14,7 @@ div.container{
 //------------------------START HEADER--------------
 header.main{
   padding-top: 50px;
-  background:$h-bg;
+  background:$purple;
   div.container{
     padding: 0 40px;
     div.row.nav{
@@ -41,7 +41,7 @@ header.main{
                 margin-right: 0;
               }
               a{
-                color: $h-nav-color;
+                color: $white;
                 font-weight: 400;
                 text-transform: uppercase;
                 font-size: 16px;
@@ -50,7 +50,7 @@ header.main{
                 text-decoration: none;
                 line-height: 18px;
                 &:hover{
-                  background: $h-nav-hover;
+                  background: $dark-purple;
                 }
               }
             }
@@ -70,7 +70,7 @@ header.main{
             font-size: 42px;
             font-weight: 700;
             line-height: 48.82px;
-            color: $h-title-color;
+            color: $dark-white;
           }
         }
       }
@@ -85,15 +85,15 @@ header.main{
         padding-bottom: 144px;
         a{
           text-decoration: none;
-          color:$h-button-color;
+          color:$white;
           font-size: 18px;
           font-weight: 400;
           line-height: 26.19px;
           text-transform: uppercase;
           letter-spacing: 0.27px;
           padding: 20px 82px;
-          background: $h-button-bg;
-          border-bottom: 4px solid $h-button-border-bg;
+          background: $orange;
+          border-bottom: 4px solid $dark-orange;
           border-radius: 5px;
 
 
@@ -106,7 +106,7 @@ header.main{
 
 //------------------------START SERVICES------------
 section.services{
-background: $s-bg;
+background: $mint;
   padding-bottom: 120px;
   div.container{
     div.row.services-title{
@@ -114,9 +114,9 @@ background: $s-bg;
       justify-content: center;
       padding-top: 118px;
       h1{
-        @include title($s-title-color);
+        @include title($white);
           @include title-underscore(
-                $s-title-underscore-color,
+                $solo-dark,
                 41%,
                 -24px,
                 0.15
@@ -128,7 +128,7 @@ background: $s-bg;
       display: flex;
       justify-content: center;
       p{
-        @include second-title($s-title-color);
+        @include second-title($white);
         width: 603px;
         height: 45px;
         text-align: center;
@@ -181,7 +181,7 @@ background: $s-bg;
 
 //------------------------START TEAM----------------
 section.team{
-  background:$t-bg;
+  background:$team-blue-gray;
   padding-bottom: 125px;
   div.container{
     padding: 0 30px;
@@ -191,9 +191,9 @@ section.team{
       justify-content: center;
       position: relative;
       h2{
-        @include title($t-main-color);
+        @include title($dark-blue-gray);
         @include title-underscore(
-                        $t-underscore-bg,
+                        $team-blue-gray-underscore,
                         42.5%,
                         -25px,
                         0.85
@@ -205,7 +205,7 @@ section.team{
       display: flex;
       justify-content: center;
       p{
-        @include second-title($t-main-color);
+        @include second-title($dark-blue-gray);
       }
     }
     div.row.team-items{
@@ -237,7 +237,7 @@ section.team{
             line-height: 18px;
             text-transform: uppercase;
             letter-spacing: 0.48px;
-            color: $t-item-title-color;
+            color: $black-gray;
           }
 
         }
@@ -259,7 +259,7 @@ section.team{
             letter-spacing: 0.32px;
             width: 200px;
             text-align: center;
-            color: $t-item-desc-color;
+            color: $dark-blue-gray;
           }
         }
         div.row.social-link{
@@ -272,12 +272,12 @@ section.team{
             width: 32px;
             height: 32px;
 
-            background-color: $t-item-social-bg;
+            background-color: $team-blue-gray-underscore;
             border-radius: 50%;
             i{
               padding-top: 7px;
               font-size: 18px;
-              color: $i-item-social-color;
+              color: $white;
             }
           }
         }
@@ -296,9 +296,9 @@ section.skill{
       justify-content: center;
       margin-top: 118px;
       h2{
-        @include title($skill-title-color);
+        @include title($dark-blue-gray);
         @include title-underscore(
-        $skill-underscore-bg,
+                        $light-blue,
         37%,
         -23px,
         0.75
@@ -311,7 +311,7 @@ section.skill{
       justify-content: center;
       flex-direction: column;
       p{
-        @include second-title($skill-title-color);
+        @include second-title($dark-blue-gray);
         margin-bottom: 0;
       }
     }
@@ -335,7 +335,7 @@ section.skill{
             height: 18px;
             p{
               text-align: center;
-              color: $skill-title-color;
+              color: $dark-blue-gray;
               font-size: 24px;
               font-weight: 700;
               line-height: 18px;
@@ -352,7 +352,7 @@ section.skill{
 
 //------------------------START PORTFOLIO-----------
 section.portfolio{
-  background:$port-bg ;
+  background:$gritty ;
   padding: 5px 0 108px;
   div.container{
     div.row.port-title{
@@ -360,9 +360,9 @@ section.portfolio{
       display: flex;
       justify-content: center;
       h2{
-        @include title($port-color);
+        @include title($light-dark);
         @include title-underscore(
-        $port-underscore,
+        $light-gritty,
         37%,
         -25px,
         1
@@ -376,7 +376,7 @@ section.portfolio{
       justify-content: center;
       p{
         margin: 0;
-        @include second-title($port-color);
+        @include second-title($light-dark);
       }
     }
     div.row.portfolio-button{
@@ -408,7 +408,7 @@ section.portfolio{
         }
         div.title{
           p{
-            @include second-title($port-color);
+            @include second-title($light-dark);
             line-height: 19.5px;
             text-transform: uppercase;
             letter-spacing: 0.36px;
@@ -423,10 +423,10 @@ section.portfolio{
       div.link{
         width: 293px;
         height: 70px;
-        background:$port-link-bg;
+        background:$mint;
         display: flex;
         justify-content: center;
-        border-bottom: 4px solid $port-link-color-bord;
+        border-bottom: 4px solid $dark-mint;
         border-radius: 5px;
         a{
           margin: auto;
@@ -435,7 +435,7 @@ section.portfolio{
           line-height: 26.19px;
           text-transform: uppercase;
           letter-spacing: 0.27px;
-          color: $port-link-color;
+          color: $white;
 
         }
       }
@@ -446,7 +446,7 @@ section.portfolio{
 
 //------------------------START ABOUT---------------
 section.about{
-  background: $about-bg;
+  background: $rose;
   padding: 50px 0 130px;
   div.container{
     div.row.about-title{
@@ -454,9 +454,9 @@ section.about{
       justify-content: center;
       margin-top: 70px;
       h2{
-        @include title($about-title-color);
+        @include title($white);
         @include title-underscore(
-                        $about-underscore,
+                        $dark-rose,
                         43%,
                         -25px,
                         1
@@ -469,7 +469,7 @@ section.about{
       justify-content: center;
       margin: 34px 0 0;
       p{
-        @include second-title($about-title-color);
+        @include second-title($white);
       }
     }
     div.row.comments{
@@ -501,7 +501,7 @@ section.about{
             line-height: 31.2px;
             letter-spacing: 0.35px;
             font-style: italic;
-            color: $about-title-color;
+            color: $white;
           }
           h3{
             margin-bottom: 0;
@@ -512,7 +512,7 @@ section.about{
             line-height: 26px;
             text-transform: uppercase;
             letter-spacing: 0.48px;
-            color: $about-title-color;
+            color: $white;
           }
           h4{
             margin-top: 0;
@@ -522,7 +522,7 @@ section.about{
             font-weight: 400;
             line-height: 26px;
             letter-spacing: 0.36px;
-            color: $about-commentator;
+            color: $gritty;
           }
         }
       }
@@ -534,16 +534,16 @@ section.about{
 //------------------------START FOOTER--------------
 footer.touch{
   padding: 50px 0 45px;
-  background:$footer-bg;
+  background:$blue;
   div.container{
     div.row.touch-title{
       display: flex;
       justify-content: center;
       margin-top: 70px;
       h2{
-        @include title($about-title-color);
+        @include title($white);
         @include title-underscore(
-                        $footer-underscore,
+                        $dark-blue,
                         35%,
                         -25px,
                         1
@@ -555,7 +555,7 @@ footer.touch{
       justify-content: center;
       margin: 35px 0 0;
       p{
-        @include second-title($about-title-color);
+        @include second-title($white);
       }
     }
     form{
@@ -582,7 +582,7 @@ footer.touch{
             top: 20px;
             width: 100%;
             display: inline;
-            color: $footer-form-color;
+            color: $white;
           }
           .placeinput input:focus + .place_holder,
           .placeinput input:valid + .place_holder {
@@ -602,7 +602,7 @@ footer.touch{
 
           }
         input{
-          background: $footer-form-bg;
+          background: $dark-blue;
 
           width: 414px;
           height: 56px;
@@ -611,7 +611,7 @@ footer.touch{
           padding: 20px;
           position: relative;
           outline: none;
-          color: $footer-form-color;
+          color: $white;
 
         }
       }
@@ -625,7 +625,7 @@ footer.touch{
           top: 20px;
           width: 100%;
           display: inline;
-          color: $footer-form-color;
+          color: $white;
         }
         .placeinput textarea:focus + .place_holder,
         .placeinput textarea:valid + .place_holder{
@@ -636,7 +636,7 @@ footer.touch{
           overflow: hidden;
         }
         .place_holder span {
-          color: $footer-form-star;
+          color: $red-star;
         }
         div.place_holder{
           font-size: 18px;
@@ -653,7 +653,7 @@ footer.touch{
             height: 10px;
 
           }
-          color: $footer-form-color;
+          color: $white;
           outline: none;
           padding: 20px;
           resize: both;
@@ -669,12 +669,12 @@ footer.touch{
           margin-top: 44px;
           width: 293px;
           height: 70px;
-          background-color: $footer-form-submit-bg;
+          background-color: $light-white-blue;
           border: 0;
-          border-bottom: 4px solid $footer-form-submit-bg-d-bord;
+          border-bottom: 4px solid $dark-white-blue;
           border-radius: 6px;
           text-transform: uppercase;
-          color:$footer-form-color;
+          color:$white;
           font-size: 20px;
           font-weight: 700;
         }
@@ -692,10 +692,10 @@ footer.touch{
           font-size: 24px;
           font-weight: 500;
           line-height: 29.91px;
-          color:$footer-social-color;
+          color:$social-hover;
           transition:0.2s;
           &:hover{
-            color:$footer-social-hover-color;
+            color:$white;
           }
         }
       }

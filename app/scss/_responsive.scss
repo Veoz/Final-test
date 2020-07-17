@@ -28,7 +28,7 @@ nav.menu-disable{
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color:$burg-bg;
+  background-color:$purple;
   display: none;
   &.menu-active{
     display: block;
@@ -48,7 +48,7 @@ nav.menu-disable{
       }
       a{
 
-        color:$burg-color;
+        color:$white;
         font-weight: 700;
       }
 
