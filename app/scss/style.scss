@@ -155,7 +155,7 @@ background: $mint;
           h1{
             margin:auto;
             text-align: center;
-            color: $s-title-color;
+            color: $white;
             font-size: 24px;
             font-weight: 700;
             line-height: 18px;
@@ -170,7 +170,7 @@ background: $mint;
             width: 197px;
             height: 64px;
             text-align: center;
-            color: $h-title-color;
+            color: $dark-white;
           }
         }
       }
@@ -593,7 +593,7 @@ footer.touch{
             overflow: hidden;
           }
           .place_holder span {
-            color: $footer-form-star;
+            color: $red-star;
           }
           div.place_holder{
             font-size: 18px;
@@ -659,7 +659,7 @@ footer.touch{
           resize: both;
           width: 860px;
           height: 200px;
-          background: $footer-form-bg;
+          background: $dark-blue;
           border: none;
           border-radius: 5px;
         }
