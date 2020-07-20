@@ -3,53 +3,63 @@
 
 
 //------------------------START MAIN CSS RULES------
-div.container{
+div.container {
   max-width: 1140px;
   box-sizing: border-box;
   padding: 0 30px;
   font-family: "Titillium Web";
 }
+
 //------------------------START MAIN CSS RULES------
 
 //------------------------START HEADER--------------
-header.main{
+header.main {
   padding-top: 50px;
-  background:$purple;
-  div.container{
+  background: $purple;
+
+  div.container {
     padding: 0 40px;
-    div.row.nav{
+
+    div.row.nav {
       display: flex;
       justify-content: space-between;
-      div.logo{
+
+      div.logo {
         padding-left: 37px;
       }
-      div.nav.col-6{
+
+      div.nav.col-6 {
         padding-right: 3px;
         display: flex;
         justify-content: flex-end;
-        nav.head{
-          ul{
+
+        nav.head {
+          ul {
             margin-top: 5px;
-            display:flex;
+            display: flex;
             justify-content: space-around;
-            li{
+
+            li {
               display: flex;
               justify-content: space-around;
               list-style: none;
               margin: 0 11px 10px 0;
-              &:last-child{
+
+              &:last-child {
                 margin-right: 0;
               }
-              a{
+
+              a {
                 color: $white;
                 font-weight: 400;
                 text-transform: uppercase;
                 font-size: 16px;
-                padding: 4px 17px ;
+                padding: 4px 17px;
                 border-radius: 5px;
                 text-decoration: none;
                 line-height: 18px;
-                &:hover{
+
+                &:hover {
                   background: $dark-purple;
                 }
               }
@@ -58,14 +68,17 @@ header.main{
         }
       }
     }
-    div.row.title{
-      div.col-10{
+
+    div.row.title {
+      div.col-10 {
         margin: auto;
         padding: 0;
-        div.title{
+
+        div.title {
           margin: 115px 0 0;
           display: flex;
-          h1{
+
+          h1 {
             text-align: center;
             font-size: 42px;
             font-weight: 700;
@@ -75,17 +88,20 @@ header.main{
         }
       }
     }
-    div.row.button{
+
+    div.row.button {
       margin-top: 50px;
       display: flex;
       justify-content: center;
-      div.col-5{
+
+      div.col-5 {
         display: flex;
         justify-content: center;
         padding-bottom: 144px;
-        a{
+
+        a {
           text-decoration: none;
-          color:$white;
+          color: $white;
           font-size: 18px;
           font-weight: 400;
           line-height: 26.19px;
@@ -102,41 +118,48 @@ header.main{
     }
   }
 }
+
 //------------------------END HEADER----------------
 
 //------------------------START SERVICES------------
-section.services{
-background: $mint;
+section.services {
+  background: $mint;
   padding-bottom: 120px;
-  div.container{
-    div.row.services-title{
+
+  div.container {
+    div.row.services-title {
       display: flex;
       justify-content: center;
       padding-top: 118px;
-      h1{
+
+      h1 {
         @include title($white);
-          @include title-underscore(
-                $solo-dark,
-                41%,
-                -24px,
-                0.15
-          );
+        @include title-underscore(
+            $solo-dark,
+            41%,
+            -24px,
+            0.15
+        );
       }
     }
-    div.row.services-description{
+
+    div.row.services-description {
       margin-top: 35px;
       display: flex;
       justify-content: center;
-      p{
+
+      p {
         @include second-title($white);
         width: 603px;
         height: 45px;
         text-align: center;
       }
     }
-    div.row.services-items{
+
+    div.row.services-items {
       margin-top: 75px;
-      div.col-3.item{
+
+      div.col-3.item {
         padding: 0 40px;
         min-height: 300px;
         min-width: 190px;
@@ -144,16 +167,18 @@ background: $mint;
         flex-direction: column;
         justify-content: space-around;
 
-        div.img{
-         display: flex;
+        div.img {
+          display: flex;
           justify-content: center;
-          img{
+
+          img {
             margin-bottom: 50px;
           }
         }
-        div.text{
-          h1{
-            margin:auto;
+
+        div.text {
+          h1 {
+            margin: auto;
             text-align: center;
             color: $white;
             font-size: 24px;
@@ -165,7 +190,7 @@ background: $mint;
 
           }
 
-          p{
+          p {
             margin-top: 20px;
             width: 197px;
             height: 64px;
@@ -177,60 +202,71 @@ background: $mint;
     }
   }
 }
+
 //------------------------END SERVICES--------------
 
 //------------------------START TEAM----------------
-section.team{
-  background:$team-blue-gray;
+section.team {
+  background: $team-blue-gray;
   padding-bottom: 125px;
-  div.container{
+
+  div.container {
     padding: 0 30px;
-    div.row.team-title{
+
+    div.row.team-title {
       padding-top: 120px;
       display: flex;
       justify-content: center;
       position: relative;
-      h2{
+
+      h2 {
         @include title($dark-blue-gray);
         @include title-underscore(
-                        $team-blue-gray-underscore,
-                        42.5%,
-                        -25px,
-                        0.85
+            $team-blue-gray-underscore,
+            42.5%,
+            -25px,
+            0.85
         );
       }
     }
-    div.row.description{
+
+    div.row.description {
       margin-top: 38px;
       display: flex;
       justify-content: center;
-      p{
+
+      p {
         @include second-title($dark-blue-gray);
       }
     }
-    div.row.team-items{
-        display: flex;
+
+    div.row.team-items {
+      display: flex;
       justify-content: space-around;
-      div.col-3.item{
-        margin: 60px 0 0 0px ;
+
+      div.col-3.item {
+        margin: 60px 0 0 0px;
         padding: 0;
         width: 200px;
         height: 490px;
 
 
-        div.img{
+        div.img {
           display: flex;
           justify-content: center;
-          img{
+
+          img {
             border-radius: 50%;
 
           }
         }
-        div.row.item-title{
+
+        div.row.item-title {
           display: flex;
           justify-content: center;
           margin-top: 40px;
-          h2{
+
+          h2 {
             text-align: center;
             font-size: 24px;
             font-weight: 700;
@@ -241,17 +277,21 @@ section.team{
           }
 
         }
+
         div.row.item-second-title {
           display: flex;
           justify-content: center;
-          a{
+
+          a {
 
           }
         }
-        div.row.item-description{
+
+        div.row.item-description {
           display: flex;
           justify-content: center;
-          p{
+
+          p {
             margin-top: 20px;
             font-size: 16px;
             font-weight: 300;
@@ -262,11 +302,13 @@ section.team{
             color: $dark-blue-gray;
           }
         }
-        div.row.social-link{
+
+        div.row.social-link {
           margin: 10px 0 0;
           display: flex;
           justify-content: center;
-          a{
+
+          a {
             margin: 0 5px 0;
             text-align: center;
             width: 32px;
@@ -274,7 +316,8 @@ section.team{
 
             background-color: $team-blue-gray-underscore;
             border-radius: 50%;
-            i{
+
+            i {
               padding-top: 7px;
               font-size: 18px;
               color: $white;
@@ -285,105 +328,122 @@ section.team{
     }
   }
 }
+
 //------------------------END TEAM------------------
 
 //------------------------START SKILL---------------
-section.skill{
+section.skill {
   padding-bottom: 118px;
-  div.container{
-    div.row.skill-title{
+
+  div.container {
+    div.row.skill-title {
       display: flex;
       justify-content: center;
       margin-top: 118px;
-      h2{
+
+      h2 {
         @include title($dark-blue-gray);
         @include title-underscore(
-                        $light-blue,
-        37%,
-        -23px,
-        0.75
+            $light-blue,
+            37%,
+            -23px,
+            0.75
         );
       }
     }
-    div.row.skill-second-title{
+
+    div.row.skill-second-title {
       margin-top: 35px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      p{
+
+      p {
         @include second-title($dark-blue-gray);
         margin-bottom: 0;
       }
     }
-    div.row.count{
+
+    div.row.count {
       display: flex;
       justify-content: space-between;
-        div.col-3.item{
-          margin: 80px 0 0;
-          width: 182px;
-          height: 210px;
-          padding: 0;
-          div.img{
-            display: flex;
-            justify-content: center;
-          }
-          div.skill-name{
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            width: 100%;
-            height: 18px;
-            p{
-              text-align: center;
-              color: $dark-blue-gray;
-              font-size: 24px;
-              font-weight: 700;
-              line-height: 18px;
-              text-transform: uppercase;
-              letter-spacing: 0.48px;
-            }
+
+      div.col-3.item {
+        margin: 80px 0 0;
+        width: 182px;
+        height: 210px;
+        padding: 0;
+
+        div.img {
+          display: flex;
+          justify-content: center;
+        }
+
+        div.skill-name {
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;
+          width: 100%;
+          height: 18px;
+
+          p {
+            text-align: center;
+            color: $dark-blue-gray;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.48px;
           }
         }
+      }
 
     }
   }
 }
+
 //------------------------END SKILL-----------------
 
 //------------------------START PORTFOLIO-----------
-section.portfolio{
-  background:$gritty ;
+section.portfolio {
+  background: $gritty;
   padding: 5px 0 108px;
-  div.container{
-    div.row.port-title{
+
+  div.container {
+    div.row.port-title {
       margin-top: 119px;
       display: flex;
       justify-content: center;
-      h2{
+
+      h2 {
         @include title($light-dark);
         @include title-underscore(
-        $light-gritty,
-        37%,
-        -25px,
-        1
+            $light-gritty,
+            37%,
+            -25px,
+            1
         );
       }
     }
-    div.port-second-title{
+
+    div.port-second-title {
       margin-top: 35px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      p{
+
+      p {
         margin: 0;
         @include second-title($light-dark);
       }
     }
-    div.row.portfolio-button{
+
+    div.row.portfolio-button {
       display: flex;
       justify-content: center;
       margin-top: 40px;
-      button{
+
+      button {
         margin: 0 7px 0;
         border: 0;
         width: 84px;
@@ -396,18 +456,22 @@ section.portfolio{
         border-radius: 4px;
       }
     }
-    div.row.port-items{
+
+    div.row.port-items {
       margin-top: 20px;
-      div.col-6.item{
+
+      div.col-6.item {
         box-sizing: border-box;
         padding: 0 9px;
-        margin: 45px  0 0;
-        div.img{
+        margin: 45px 0 0;
+
+        div.img {
           align-items: center;
           margin-bottom: 30px;
         }
-        div.title{
-          p{
+
+        div.title {
+          p {
             @include second-title($light-dark);
             line-height: 19.5px;
             text-transform: uppercase;
@@ -416,19 +480,22 @@ section.portfolio{
         }
       }
     }
-    div.row.port-link{
+
+    div.row.port-link {
       display: flex;
       justify-content: center;
       margin-top: 63px;
-      div.link{
+
+      div.link {
         width: 293px;
         height: 70px;
-        background:$mint;
+        background: $mint;
         display: flex;
         justify-content: center;
         border-bottom: 4px solid $dark-mint;
         border-radius: 5px;
-        a{
+
+        a {
           margin: auto;
           font-size: 18px;
           font-weight: 400;
@@ -442,71 +509,82 @@ section.portfolio{
     }
   }
 }
+
 //------------------------END PORTFOLIO-------------
 
 //------------------------START ABOUT---------------
-section.about{
+section.about {
   background: $rose;
   padding: 50px 0 130px;
-  div.container{
-    div.row.about-title{
+
+  div.container {
+    div.row.about-title {
       display: flex;
       justify-content: center;
       margin-top: 70px;
-      h2{
+
+      h2 {
         @include title($white);
         @include title-underscore(
-                        $dark-rose,
-                        43%,
-                        -25px,
-                        1
+            $dark-rose,
+            43%,
+            -25px,
+            1
         );
       }
     }
-    div.row.about-second-title{
+
+    div.row.about-second-title {
 
       display: flex;
       justify-content: center;
       margin: 34px 0 0;
-      p{
+
+      p {
         @include second-title($white);
       }
     }
-    div.row.comments{
+
+    div.row.comments {
       margin-top: -90px;
       display: flex;
       justify-content: space-between;
 
-      div.col-6.item{
+      div.col-6.item {
         margin: 140px 0 0;
         display: flex;
         width: 470px;
         height: 170px;
         padding: 0;
-        &:nth-child(2n+2){
-         padding-left: 35px;
+
+        &:nth-child(2n+2) {
+          padding-left: 35px;
         }
-        div.img{
+
+        div.img {
           margin-right: 40px;
-          img{
+
+          img {
             width: 96px;
             height: 96px;
             border-radius: 50%;
 
           }
         }
-        div.text{
-          p{
+
+        div.text {
+          p {
             font-size: 21px;
             line-height: 31.2px;
             letter-spacing: 0.35px;
             font-style: italic;
             color: $white;
           }
-          h3{
+
+          h3 {
             margin-bottom: 0;
             box-sizing: border-box;
-            padding: 10px 14px  0 ;
+            padding: 10px 14px 0;
             font-size: 24px;
             font-weight: 700;
             line-height: 26px;
@@ -514,10 +592,11 @@ section.about{
             letter-spacing: 0.48px;
             color: $white;
           }
-          h4{
+
+          h4 {
             margin-top: 0;
             box-sizing: border-box;
-            padding: 0 14px  0 ;
+            padding: 0 14px 0;
             font-size: 18px;
             font-weight: 400;
             line-height: 26px;
@@ -529,51 +608,59 @@ section.about{
     }
   }
 }
+
 //------------------------END ABOUT-----------------
 
 //------------------------START FOOTER--------------
-footer.touch{
+footer.touch {
   padding: 50px 0 0;
-  background:$blue;
-  div.container{
-    div.row.touch-title{
+  background: $blue;
+
+  div.container {
+    div.row.touch-title {
       display: flex;
       justify-content: center;
       margin-top: 70px;
-      h2{
+
+      h2 {
         @include title($white);
         @include title-underscore(
-                        $dark-blue,
-                        35%,
-                        -25px,
-                        1
+            $dark-blue,
+            35%,
+            -25px,
+            1
         );
       }
     }
-    div.row.touch-second-title{
+
+    div.row.touch-second-title {
       display: flex;
       justify-content: center;
       margin: 35px 0 0;
-      p{
+
+      p {
         @include second-title($white);
       }
     }
-    form{
+
+    form {
       padding-bottom: 115px;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      div.row{
+
+      div.row {
         padding: 0;
         display: flex;
         justify-content: space-around;
 
-        div.input{
+        div.input {
           margin: 60px 0 20px;
-        width: 860px;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
+          width: 860px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+
           .place_holder {
             z-index: 100;
             left: 25px;
@@ -584,39 +671,45 @@ footer.touch{
             display: inline;
             color: $white;
           }
+
           .placeinput input:focus + .place_holder,
           .placeinput input:valid + .place_holder {
             display: none;
           }
+
           .placeinput {
             position: relative;
             overflow: hidden;
           }
+
           .place_holder span {
             color: $red-star;
           }
-          div.place_holder{
+
+          div.place_holder {
             font-size: 18px;
             font-weight: 400;
             line-height: 18px;
 
           }
-        input{
-          background: $dark-blue;
 
-          width: 414px;
-          height: 56px;
-          border: none;
-          border-radius: 5px;
-          padding: 20px;
-          position: relative;
-          outline: none;
-          color: $white;
+          input {
+            background: $dark-blue;
 
+            width: 414px;
+            height: 56px;
+            border: none;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+            outline: none;
+            color: $white;
+
+          }
         }
       }
-      }
-      div.row.textarea{
+
+      div.row.textarea {
         .place_holder {
           z-index: 100;
           left: 25px;
@@ -627,24 +720,29 @@ footer.touch{
           display: inline;
           color: $white;
         }
+
         .placeinput textarea:focus + .place_holder,
-        .placeinput textarea:valid + .place_holder{
+        .placeinput textarea:valid + .place_holder {
           display: none;
         }
+
         .placeinput {
           position: relative;
           overflow: hidden;
         }
+
         .place_holder span {
           color: $red-star;
         }
-        div.place_holder{
+
+        div.place_holder {
           font-size: 18px;
           font-weight: 400;
           line-height: 18px;
 
         }
-        textarea{
+
+        textarea {
           &::-webkit-resizer {
             display: block;
             background: url("/img/resize.png");
@@ -653,6 +751,7 @@ footer.touch{
             height: 10px;
 
           }
+
           color: $white;
           outline: none;
           padding: 20px;
@@ -664,8 +763,9 @@ footer.touch{
           border-radius: 5px;
         }
       }
-      div.row.submit{
-        input{
+
+      div.row.submit {
+        input {
           margin-top: 44px;
           width: 293px;
           height: 70px;
@@ -674,7 +774,7 @@ footer.touch{
           border-bottom: 4px solid $dark-white-blue;
           border-radius: 6px;
           text-transform: uppercase;
-          color:$white;
+          color: $white;
           font-size: 18px;
           font-weight: 600;
         }
@@ -684,29 +784,33 @@ footer.touch{
 
   }
 
-  div.row.footer-social{
+  div.row.footer-social {
     box-sizing: content-box;
     padding: 40px 80px 45px;
     background-color: #344b8e;
-    margin:0;
+    margin: 0;
 
-    div.container{
+    div.container {
       display: flex;
       justify-content: center;
-      div.item{
-      margin: 0 30px;
-      a{
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 29.91px;
-        color:$white;
-        transition:0.2s;
-        &:hover{
-          color:$social-hover;
+
+      div.item {
+        margin: 0 30px;
+
+        a {
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 29.91px;
+          color: $white;
+          transition: 0.2s;
+
+          &:hover {
+            color: $social-hover;
+          }
         }
       }
-    }}
+    }
 
   }
 }
